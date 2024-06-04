@@ -117,6 +117,78 @@ void human::Set_n(int _n)
 	}
 }
 
+void human::initialize(int a)
+{
+	if (identity_number != nullptr) delete[] identity_number;
+	identity_number = new char[13];
+	if (surname != nullptr) delete[] surname;
+	if (name != nullptr) delete[] name;
+	if (patronymic != nullptr) delete[] patronymic;
+	switch (a)
+	{
+	case 1:
+		strcpy(identity_number, "111111111111");
+		surname = new char[strlen("Наперво") + 1];
+		strcpy(surname, "Наперво");
+		name = new char[strlen("Елена") + 1];
+		strcpy(name, "Елена");
+		patronymic = new char[strlen("Андреевна") + 1];
+		strcpy(patronymic, "Андреевна");
+		birthday.Set_day(11);
+		birthday.Set_month(11);
+		birthday.Set_year(2011);
+		break;
+	case 2:
+		strcpy(identity_number, "222222222222");
+		surname = new char[strlen("Вторично") + 1];
+		strcpy(surname, "Вторично");
+		name = new char[strlen("Игнатий") + 1];
+		strcpy(name, "Игнатий");
+		patronymic = new char[strlen("Васильевич") + 1];
+		strcpy(patronymic, "Васильевич");
+		birthday.Set_day(22);
+		birthday.Set_month(12);
+		birthday.Set_year(2022);
+		break;
+	case 3:
+		strcpy(identity_number, "333333333333");
+		surname = new char[strlen("Третьяк") + 1];
+		strcpy(surname, "Третьяк");
+		name = new char[strlen("Мария") + 1];
+		strcpy(name, "Мария");
+		patronymic = new char[strlen("Владимировна") + 1];
+		strcpy(patronymic, "Владимировна");
+		birthday.Set_day(31);
+		birthday.Set_month(3);
+		birthday.Set_year(2013);
+		break;
+	case 4:
+		strcpy(identity_number, "444444444444");
+		surname = new char[strlen("Четвертак") + 1];
+		strcpy(surname, "Четвертак");
+		name = new char[strlen("Юрий") + 1];
+		strcpy(name, "Юрий");
+		patronymic = new char[strlen("Петрович") + 1];
+		strcpy(patronymic, "Петрович");
+		birthday.Set_day(14);
+		birthday.Set_month(4);
+		birthday.Set_year(2014);
+		break;
+	case 5:
+		strcpy(identity_number, "555555555555");
+		surname = new char[strlen("Пятерник") + 1];
+		strcpy(surname, "Пятерник");
+		name = new char[strlen("Елизавета") + 1];
+		strcpy(name, "Елизавета");
+		patronymic = new char[strlen("Витальевна") + 1];
+		strcpy(patronymic, "Витальевна");
+		birthday.Set_day(15);
+		birthday.Set_month(5);
+		birthday.Set_year(2015);
+		break;
+	}
+}
+
 void human::show()
 {
 	cout << "\tДанные про человека:";

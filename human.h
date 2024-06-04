@@ -13,7 +13,7 @@ class human
 public:
 	human();
 	human(const char* _identity_number, const char* _surname, const char* _name, const char* _patronymic, int _day, int _month, int _year);
-	human(const human& person);//WIP
+	human(const human& person);
 	char* Get_identity_number()
 	{
 		return identity_number;
@@ -42,6 +42,7 @@ public:
 	void Set_birthday(date data);
 	void Set_birthday(int _day, int _month, int _year);
 	static void Set_n(int _n);
+	void initialize(int a);
 	void show();
 	~human();
 };
