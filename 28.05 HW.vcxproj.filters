@@ -30,6 +30,9 @@
     <ClCompile Include="flat.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="house.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="human.h">
@@ -42,6 +45,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="flat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="house.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

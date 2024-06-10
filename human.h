@@ -44,5 +44,6 @@ public:
 	static void Set_n(int _n);
 	void initialize(int a);
 	void show();
+	human& operator=(human& obj);
 	~human();
 };

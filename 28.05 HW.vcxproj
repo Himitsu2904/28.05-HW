@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="date.cpp" />
     <ClCompile Include="flat.cpp" />
+    <ClCompile Include="house.cpp" />
     <ClCompile Include="human.cpp" />
     <ClCompile Include="line.cpp" />
     <ClCompile Include="main.cpp" />
@@ -136,6 +137,7 @@
   <ItemGroup>
     <ClInclude Include="date.h" />
     <ClInclude Include="flat.h" />
+    <ClInclude Include="house.h" />
     <ClInclude Include="human.h" />
     <ClInclude Include="line.h" />
   </ItemGroup>

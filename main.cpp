@@ -2,7 +2,7 @@
 #include <iostream>
 #include "human.h"
 #include "line.h"
-#include "flat.h"
+#include "house.h"
 #include <windows.h>
 using namespace std;
 
@@ -44,11 +44,14 @@ int main()
 	cout << endl << "------------------------------------------------------------------" << endl;
 	flat fl1(5);
 	cout << "\tÊגאנעטנא 1" << endl;	fl1.show();
-	cout << endl << endl;
+	cout << endl;
 
-	flat fl2=fl1;
+	flat fl2(3);
 	cout << "\tÊגאנעטנא 2" << endl;	fl2.show();
-	cout << endl << endl;
+	cout << "------------------------------------------------------------------" << endl;
+
+	house home(2);
+	cout << "\tÄמל" << endl; home.show();
 
 	cout << endl;
 }

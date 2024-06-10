@@ -197,6 +197,29 @@ void human::show()
 	cout << "\nДата рождения: "; birthday.whole_date();
 }
 
+human& human::operator=(human& obj)
+{
+	if (this == &obj) return *this;
+	int size = strlen(obj.identity_number);
+	if (identity_number != nullptr) delete[] identity_number;
+	identity_number = new char[size + 1];
+	strcpy(identity_number, obj.identity_number);
+	size = strlen(obj.surname);
+	if (surname != nullptr) delete[] surname;
+	surname = new char[size + 1];
+	strcpy(surname, obj.surname);
+	size = strlen(obj.name);
+	if (name != nullptr) delete[] name;
+	name = new char[size + 1];
+	strcpy(name, obj.name);
+	size = strlen(obj.patronymic);
+	if (patronymic != nullptr) delete[] patronymic;
+	patronymic = new char[size + 1];
+	strcpy(patronymic, obj.patronymic);
+	birthday = obj.birthday;
+	return *this;
+}
+
 human::~human()
 {
 	delete[] identity_number;
