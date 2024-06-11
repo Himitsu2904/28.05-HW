@@ -10,8 +10,10 @@ int main()
 {
 	SetConsoleOutputCP(1251);
 	SetConsoleCP(1251);
+	srand(time(0));
 	human person1("243956771028", "Галименко", "Анастасия", "Евгениевна", 30, 5, 2005);
-	cout << "\tЧеловек 1" << endl;	person1.show();
+	cout << "\tЧеловек 1" << endl;
+	person1.show();
 	cout << endl << endl;
 
 	human person2("392593771023", "Дрогобич", "Евгений", "Русланович", 7, 1, 2006);
@@ -52,6 +54,11 @@ int main()
 
 	house home(2);
 	cout << "\tДом" << endl; home.show();
+
+	srand(time(0));
+	house home2(3);
+	cout << "\tДом2" << endl;
+	home2.show();
 
 	cout << endl;
 }
